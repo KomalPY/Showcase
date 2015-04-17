@@ -1,0 +1,28 @@
+<div class="Grid">
+<div id="header">
+	<h1> Explore </h1>
+</div>
+<body>
+<div class="background-image"></div>
+<div class= "content">
+<ul class="rig columns-3">
+{{#each}}
+<li>
+<div class="greenBorder"> 
+{{#link-to 'places' statename}}
+<img {{bind-attr src= stateimage}} alt="stateimage">
+{{/link-to}}
+<h3>{{statename}}<br>{{stateratings}}</h3>
+</div>
+</li>
+{{/each}}
+</ul>
+</div>
+</body>
+</div>
+
+
+
+
+
+

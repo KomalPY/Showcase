@@ -1,0 +1,26 @@
+<div class="screen3">
+	<body>	
+
+
+	{{maps-canvas model=model}}
+
+<div class= "content">
+<ul class="rig columns-2">{{#each}}
+<li>
+
+
+<div class="greenBorder">
+<img {{bind-attr src=placeimage}} alt="placeimage">
+
+<h4>{{placename}}</h4>
+<p>{{placedescription}}</p>
+</div>
+</li>
+{{/each}}
+</ul>
+</div>
+
+
+</body>
+</div>
+
